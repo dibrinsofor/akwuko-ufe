@@ -74,7 +74,7 @@ class Story(Resource):
             return result
         else: 
             result = StoryModel.query.filter_by(id=story_id).first()
-            return result
+            return result, 200
 
     @marshal_with(resource_fields)
     def put(self, story_id):
