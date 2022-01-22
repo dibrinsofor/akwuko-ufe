@@ -1,0 +1,31 @@
+*{
+    background: #F8F8F8;
+}
+.container{
+    position: absolute;
+    margin-top: 12%;
+    width: 80%;
+    left: 10%;
+}
+header {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    border: 1px solid black;
+    top: 2%;
+    height: auto;
+    display: inline-block;
+}
+header .pages{
+    float: right;
+}
+header .pages ul{
+    list-style: none;
+    text-decoration: none;
+}
+header .pages ul li a{
+    text-decoration: none;
+}
+header .logo img{
+    width: 80px;
+}
