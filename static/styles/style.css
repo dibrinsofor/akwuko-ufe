@@ -20,6 +20,28 @@
     border-radius: .5rem !important;
     border: 1px solid black;
 }
+.sub-blob {
+    border: 1px solid pink;
+    border-radius: .3rem;
+    width: 40%;
+    height: 300px;
+    background-color: white;
+}
+.sub-blob p {
+    font-size: calc(0.3rem +1.5vw) !important;
+    padding-left: 25px;
+}
+.sub-blob h2 {
+    font-size: calc(1rem + 1.5vw) !important;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.sub-blob img {
+    border: 1px solid green;
+    width: inherit;
+    height: 210px;
+    position: relative;
+}
 /* .image-block {
     border: 1px solid pink;
     display: ;
