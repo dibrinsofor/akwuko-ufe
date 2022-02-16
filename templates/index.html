@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block content %}
+<div class="main-text">
+    <p class="text-end main fs-1">We created a space, <br> to preserve African culture, <br> and shared it with you.</p><br>
+    <p class="text-end tag">promote African culture. share myths and folktales. build community.</h5>
+</div>
+<div class="main-blob">
+    {% set x, y = 0, 0 %}
+    {% for datas in data %}
+        {% if datas.likes > x %}
+            {% set x = datas.likes %}
+            {% set y = datas %}
+        {% endif %}
+    <div class="rounded main-block">
+        <img class="main-block-img" src="#" alt="most read story cover">
+        <div class="image-block"></div>
+        <div class="main-story-details">
+            <div class="block-1">
+                <h2>{{ y.title }}</h2><br>
+                <h5>{{ y.field }}</h5>
+                <h5>{{y.date}}</h5>
+            </div>
+            <div class="block-2"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="other-stories">
+    {% for datas in data %}
+    <div class="sub-blob">
+        <img src="{{ datas.cover_img }}" alt="">
+        <h2>{{ datas.title }}</h2>
+        <p>{{ datas.field }}  •  {{ datas.date }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -19,7 +19,11 @@
 .rounded {
     border-radius: .5rem !important;
     border: 1px solid black;
+    /*  */
+    display: flex;
+    align-items: center;
 }
+/*  */
 .sub-blob {
     border: 1px solid pink;
     border-radius: .3rem;
@@ -42,7 +46,3 @@
     height: 210px;
     position: relative;
 }
-/* .image-block {
-    border: 1px solid pink;
-    display: ;
-} */
